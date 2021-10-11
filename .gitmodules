@@ -1,0 +1,9 @@
+[submodule "jquery-color"]
+	path = jquery-color
+	url = git://github.com/jquery/jquery-color.git
+[submodule "jquery"]
+	path = jquery
+	url = https://github.com/jquery/jquery.git
+[submodule "postcss"]
+	path = postcss
+	url = https://github.com/postcss/postcss.git
