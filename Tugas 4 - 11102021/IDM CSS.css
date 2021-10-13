@@ -9,11 +9,16 @@ body {
 }  
 
 .grid-container {
+    margin-top: -100px;
     display: grid;
     grid-gap: 18px 5px;
     grid-template-columns: .3fr 4fr repeat(7, .85fr) repeat(2, 1.25fr);
     grid-template-rows: min-content;
     align-items: center;
+    position: fixed;
+    background-color: whitesmoke;
+    visibility: visible;
+    z-index: 1000;
 }
 
 .grid-item {
@@ -37,6 +42,7 @@ body {
     padding-top: 50px;
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 100px;
 }
 
 .banner-text {
@@ -78,5 +84,141 @@ body {
     font-size: 20px;
     line-height: 24px;
     color: #ccc;
+    margin-bottom: 20px;
+}
+
+.subcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px 60px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+      "T1 P1"
+      "P2 T2";
+    width: 65%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+  
+    .T1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.8fr 1.2fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "Title Title"
+        "Desc Desc";
+        grid-area: T1;
+        gap: 0px 0px;
+    }
+  
+    .Title {
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-items: center;
+        align-items: end;
+        grid-template-areas:
+        ".";
+        grid-area: Title;
+        margin-bottom: 30px;
+        grid-template-columns: 1fr;
+    }
+  
+    .Desc {
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-items: center;
+        align-items: start;
+        grid-template-areas:
+        ".";
+        grid-area: Desc;
+        text-align: justify;
+        grid-template-columns: 1fr;
+    }
+  
+    .T2 {
+        display: grid;
+        grid-template-rows: 0.8fr 1.2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "Title2 Title2"
+        "Desc2 Desc2";
+        grid-area: T2;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .Title2 {
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-items: center;
+        align-items: end;
+        grid-template-areas:
+        ".";
+        grid-area: Title2;
+        margin-bottom: 30px;
+        grid-template-columns: 1fr;
+    }
+  
+    .Desc2 {
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-items: center;
+        align-items: start;
+        grid-template-areas:
+        ".";
+        grid-area: Desc2;
+        text-align: justify;
+        grid-template-columns: 1fr;
+    }
+  
+    .P1 {
+        grid-area: P1;
+    }
+  
+    .P2 {
+        grid-area: P2;
+    }
+
+.restrained {
+    position: relative;
+    z-index: 1;
+    display: block;
+    max-height: 520px;
+    box-shadow: 0 30px 45px -10px rgb(0 0 0 / 20%);
+    max-width: calc(48vw - 30px);
+    height: auto;
+}
+
+.tmultiple {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000;
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: justify;
+    transition-duration: 0.5s;
+}
+
+.pmultiple {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
     margin-bottom: 20px;
 }
