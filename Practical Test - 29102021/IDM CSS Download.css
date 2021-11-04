@@ -1,0 +1,56 @@
+.head-banner{
+  background: url("images/download.jpg");
+}
+
+.banner-text {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: left;
+}
+
+.description-download {
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+}
+
+.txtitle {
+  font-weight: normal;
+}
+
+.register {
+  color: #0000FF;
+  font-weight: 600;
+  font-style: normal;
+  transition-duration: 0.5s;
+  transition-property: color;
+}
+
+.register:hover {
+  color: #1FB393;
+}
+
+.negtextspace {
+  margin-left: 0%;
+  margin-right: 20%;
+}
+
+.textspace {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.hidden {
+  display: none;
+}
+
+#Show {
+  display: block;
+}
+
+#Hide {
+  display: none;
+}
+
+#hiddenSection {
+  display: block;
+}

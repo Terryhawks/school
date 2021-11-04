@@ -2,6 +2,12 @@
     background: url("images/language9_1.jpg");
 }
 
+.banner-text {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: left;
+}
+
 .restrained {
     position: relative;
     z-index: 1;

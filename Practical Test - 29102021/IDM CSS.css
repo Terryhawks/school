@@ -8,6 +8,10 @@ body {
     min-width: 270px;
 }  
 
+.choice {
+    color: #1FB393;
+}
+
 .grid-container {
     margin-top: -65px;
     display: grid;
