@@ -1,97 +1,18 @@
-body {
-    font-family: "Segoe UI", Geneva, Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-    color: #3F414B;
-    overflow-x: hidden;
-    overflow-y: auto;
-    min-width: 270px;
-}  
-
-.grid-container {
-    margin-top: -65px;
-    display: grid;
-    gap: 18px 5px;
-    grid-template-columns: .3fr 4fr repeat(7, .85fr) repeat(2, 1.25fr);
-    grid-template-rows: min-content;
-    align-items: center;
-    position: fixed;
-    background-color: whitesmoke;
-    visibility: visible;
-    z-index: 1000;
-}
-
-.grid-item {
-    text-align: center;
-}
-
-.grid-item-ico {
-    text-align: left;
-}
-
-.gico {
-    width: 100%;
-    height: 100%;
-}
-
 .head-banner {
-    background: url("images/head-banner.jpg");
-    background-size: cover;
-    background-position: top center;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 65px;
+  background: url("images/features9_1.jpg");
 }
 
 .banner-text {
-    color: #eeeeee;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: left;
 }
 
-.button{
-    background-color: #1FB393;
-    border-radius: 6px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 12px 20px 12px 20px;
-    color: #fff;
-    letter-spacing: 1px;
-    border: 1px solid #1FB393;
-    display: inline-block;
-    transition-duration: 1s;
-    transition-property: box-shadow, border-color, background-color, color;
-}
-
-.head-button {
-    margin: 7.5%;
-    width: max-content;
-    height: min-content;
-}
-
-.trial {
-    background-color: #fff;
-    color: #1FB393;
-}
-
-.desc {
-    width: 94%;
-    font-size: 20px;
-    line-height: 24px;
-    color: #ccc;
-    margin-bottom: 20px;
-}
-
-.subcontainer {
+.container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    gap: 20px 60px;
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px 15px;
     grid-auto-flow: row;
     justify-content: center;
     align-content: center;
@@ -105,10 +26,12 @@ body {
       "T5 P5"
       "P6 T6"
       "T7 P7"
-      "P8 T8";
-    width: 65%;
-    margin: auto;
-    margin-bottom: 30px;
+      "P8 T8"
+      "T9 P9"
+      "P10 T10";
+    width: 75%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
   }
   
   .T1 {
@@ -122,9 +45,9 @@ body {
       "TP1";
     justify-self: stretch;
     grid-area: T1;
-    margin-right: 2.5%;
-    margin-left: 10%;
-    margin-bottom: 15%;
+    margin-left: 35%;
+    margin-right: -10%;
+    margin-top: -15%;
   }
   
   .TT1 {
@@ -151,9 +74,8 @@ body {
       "TT2"
       "TP2";
     grid-area: T2;
-    margin-right: 10%;
-    margin-left: 2.5%;
-    margin-bottom: 15%;
+    margin-left: 25%;
+    margin-right: 7.5%;
   }
   
   .TT2 {
@@ -169,42 +91,34 @@ body {
     align-self: start;
     grid-area: TP2;
   }
-  
+
   .T3 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, calc(2/3)fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "TT3A"
       "TT3"
       "TP3";
     grid-area: T3;
-    justify-self: center; 
-    align-self: stretch; 
-    width: 75%; 
-    margin-right: 2.5%;
-    margin-left: 10%;
+    margin-right: -2.5%;
+    margin-left: 35%;
     margin-bottom: 10%;
   }
   
-  .TT3A {
-    justify-self: center; 
-    align-self: end; 
-    grid-area: TT3A; 
-  }
-
   .TT3 {
-    justify-self: center; 
-    align-self: center; 
-    grid-area: TT3; 
+  
+    justify-self: center;
+    align-self: end;
+    grid-area: TT3;
   }
-
+  
   .TP3 {
-    justify-self: center; 
-    align-self: center; 
-    grid-area: TP3; 
+  
+    justify-self: center;
+    align-self: start;
+    grid-area: TP3;
   }
   
   .T4 {
@@ -217,9 +131,9 @@ body {
       "TT4"
       "TP4";
     grid-area: T4;
-    margin-right: 10%;
-    margin-left: 2.5%;
-    margin-bottom: 5%;
+    margin-left: 25%;
+    margin-right: 5%;
+    margin-top: -15%;
   }
   
   .TT4 {
@@ -246,8 +160,9 @@ body {
       "TT5"
       "TP5";
     grid-area: T5;
-    margin-right: 2.5%;
-    margin-left: 10%
+    margin-left: 35%;
+    margin-right: -5%;
+    margin-top: -15%;
   }
   
   .TT5 {
@@ -274,9 +189,9 @@ body {
       "TT6"
       "TP6";
     grid-area: T6;
-    margin-right: 10%;
-    margin-left: 2.5%;
-    margin-bottom: 5%;
+    margin-top: -20%;
+    margin-left: 15%;
+    margin-right: 15;
   }
   
   .TT6 {
@@ -304,8 +219,7 @@ body {
       "TP7";
     grid-area: T7;
     margin-left: 20%;
-    margin-right: 12.5%;
-    margin-bottom: 2.5%;
+    margin-right: -5%;
   }
   
   .TT7 {
@@ -332,9 +246,9 @@ body {
       "TT8"
       "TP8";
     grid-area: T8;
-    margin-right: 10%;
-    margin-left: 12.5%;
-    margin-bottom: 15%;
+    margin-left: 27.5%;
+    margin-right: -2.5%;
+    margin-top: -15%;
   }
   
   .TT8 {
@@ -350,22 +264,84 @@ body {
     align-self: start;
     grid-area: TP8;
   }
+
+  .T9 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "TT9"
+      "TP9";
+    grid-area: T9;
+    margin-left: 25%;
+    margin-right: -5%;
+    margin-top: -20%;
+  }
   
-  .P1 { grid-area: P1; margin-top: 5.5%; margin-bottom: -5.5%; margin-right: 5%; margin-left: -5%; }
+  .TT9 {
   
-  .P2 { grid-area: P2; margin-top: 0%; margin-bottom: 0%; margin-right: -10%; margin-left: 20%; }
+    justify-self: center;
+    align-self: end;
+    grid-area: TT9;
+  }
   
-  .P3 { grid-area: P3; margin-top: 0%; margin-bottom: 0%; margin-right: 5%; margin-left: -5%; }
+  .TP9 {
   
-  .P4 { grid-area: P4; margin-top: 0%; margin-bottom: 0%; margin-right: -5%; margin-left: 5%; }
+    justify-self: center;
+    align-self: start;
+    grid-area: TP9;
+  }
+
+  .T10 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "TT10"
+      "TP10";
+    grid-area: T10;
+    margin-left: 25%;
+    margin-right: -2.5%;
+    margin-top: -35%;
+  }
   
-  .P5 { grid-area: P5; margin-top: 0%; margin-bottom: 0%; margin-right: 5%; margin-left: -5%; }
+  .TT10 {
   
-  .P6 { grid-area: P6; margin-top: 10%; margin-bottom: -5%; margin-right: -5%; margin-left: 5%; }
+    justify-self: center;
+    align-self: end;
+    grid-area: TT10;
+  }
   
-  .P7 { grid-area: P7; margin-top: 7.5%; margin-bottom: -2.5%; margin-right: 5%; margin-left: -5%; }
+  .TP10 {
   
-  .P8 { grid-area: P8; margin-top: 2.5%; margin-bottom: -7.5%; margin-right: -5%; margin-left: 5%; }
+    justify-self: center;
+    align-self: start;
+    grid-area: TP10;
+  }
+  
+  .P1 { grid-area: P1; margin-top: 5.5%; margin-bottom: -5.5%; margin-right: -10%; margin-left: 20%; }
+  
+  .P2 { grid-area: P2; margin-top: -2.5%; margin-bottom: 2.5%; margin-right: -10%; margin-left: 20%; }
+  
+  .P3 { grid-area: P3; margin-top: 2.5%; margin-bottom: 0%; margin-right: -10%; margin-left: 15%; }
+  
+  .P4 { grid-area: P4; margin-top: 0%; margin-bottom: 0%; margin-right: -30%; margin-left: 20%; }
+  
+  .P5 { grid-area: P5; margin-top: 5%; margin-bottom: -10%; margin-right: -10%; margin-left: 10%; }
+  
+  .P6 { grid-area: P6; margin-top: 5%; margin-bottom: -5%; margin-right: -15%; margin-left: 25%; }
+  
+  .P7 { grid-area: P7; margin-top: 10%; margin-bottom: -5%; margin-right: -10%; margin-left: 10%; }
+  
+  .P8 { grid-area: P8; margin-top: 5%; margin-bottom: -5%; margin-right: -25%; margin-left: 25%; }
+
+  .P9 { grid-area: P9; margin-top: 2.5%; margin-bottom: -7.5%; margin-right: -10%; margin-left: 10%; }
+  
+  .P10 { grid-area: P10; margin-top: -5%; margin-bottom: 5%; margin-right: -20%; margin-left: 20%; }
 
 .restrained {
     position: relative;
@@ -395,21 +371,4 @@ body {
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: #0F5DB1;
-    transition-duration: 0.5s;
-    transition-property: color;
-}
-
-a:hover {
-    background-color: #fffcfc;
-    color: #0e549e;
-}
-
-.opacity {
-    opacity: 0.5;
-    font-size: 13px;
 }
