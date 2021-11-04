@@ -55,19 +55,19 @@
     }
     .ExplainationDo { 
       grid-area: ExplainationDo; 
-      margin-left: -7.5%; 
+      margin-left: -25%; 
     }
     .ExplainationTd { 
       grid-area: ExplainationTd; 
-      margin-left: -25%; 
+      margin-left: -65%; 
     }
     .ExplainationTr { 
       grid-area: ExplainationTr; 
-      margin-left: 35%; 
+      margin-left: 45%; 
     }
     .ExplainationDa { 
       grid-area: ExplainationDa; 
-      margin-left: 15%; 
+      margin-left: 50%; 
     }
   
   
@@ -148,7 +148,7 @@
         gap: 0px 0px;
         grid-auto-flow: row;
         min-height: 1.5cm;
-        margin-left: -20%;
+        margin-left: -10%;
         grid-template-areas:
           "Do1"
           "Do2"
